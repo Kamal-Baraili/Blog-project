@@ -34,27 +34,6 @@ a {
   align-items: center;
 }
 
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: white;
-  justify-content: center;
-  z-index: 10;
-  display: none;
-}
-
-.preloader img {
-  width: 20rem;
-  height: 20rem;
-}
-
-.preloader.active {
-  display: flex;
-}
-
 .app {
   min-height: 100%;
   display: grid;
@@ -97,6 +76,10 @@ a {
 
 .nav_list li a:hover {
   color: var(--primary);
+}
+
+.nav_list li .checked {
+  text-decoration: 1px underline var(--primary);
 }
 
 .logo {
@@ -522,4 +505,49 @@ main {
 
 .color {
   color: var(--primary);
+}
+
+/* Contact Us Form */
+
+.form {
+  max-width: 55rem;
+  margin: 0 auto;
+}
+
+.form h4 {
+  font-size: 2.5rem;
+}
+
+.form input,
+.form textarea {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  display: block;
+  border: 1px solid #e1e1e1;
+  color: #333;
+  padding: 1rem 0;
+  text-indent: 1rem;
+  margin-top: 1rem;
+  background-color: white;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+}
+
+.form button {
+  border: none;
+  outline: none;
+  padding: 0.7rem 2rem;
+  font-size: 13px;
+  margin-top: 1rem;
+  background-color: #222;
+  color: white;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.form button:hover {
+  background-color: var(--primary);
 }

@@ -21,9 +21,9 @@
         <nav class="navigation container d_flex">
           <a class="logo" href="#">Blog</a>
           <ul class="nav_list d_flex">
-            <li><a href="#" class="checked">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#" class="checked">Contact Us</a></li>
           </ul>
 
           <div class="hamburger">
@@ -84,29 +84,33 @@
                   magnam. Nesciunt consectetur modi exercitationem et ipsa?
                 </p>
 
-                <div class="content_img">
-                  <img src="images/blog-4.svg" alt="" />
-                </div>
+                <form action="#" class="form" id="contact_form">
+                  <h4>Contact Us</h4>
+                  <input
+                    type="text"
+                    autocomplete="off"
+                    name="name"
+                    placeholder="Name"
+                    required
+                  />
 
-                <h4>Lorem ipsum dolor sit amet.</h4>
+                  <input
+                    type="email"
+                    autocomplete="off"
+                    name="email"
+                    placeholder="Email"
+                    required
+                  />
 
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quibusdam quis consequuntur ut, iusto recusandae commodi
-                  reprehenderit dicta, laborum at quia officia tempora eum,
-                  vitae aliquid? Minus hic illo vero totam optio non, assumenda
-                  magnam. Nesciunt consectetur modi exercitationem et ipsa?
-                </p>
+                  <textarea
+                    name="message"
+                    rows="8"
+                    placeholder="Message"
+                    required
+                  ></textarea>
 
-                <h4>Lorem ipsum dolor sit amet.</h4>
-
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quibusdam quis consequuntur ut, iusto recusandae commodi
-                  reprehenderit dicta, laborum at quia officia tempora eum,
-                  vitae aliquid? Minus hic illo vero totam optio non, assumenda
-                  magnam. Nesciunt consectetur modi exercitationem et ipsa?
-                </p>
+                  <button type="submit" value="Send">Send</button>
+                </form>
               </div>
             </div>
 
